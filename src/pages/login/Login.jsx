@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useContext, useRef } from "react";
-import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./login.css";
 
@@ -36,6 +35,7 @@ export default function Login() {
           type="email"
           placeholder="Enter your email..."
           ref={userRef}
+          defaultValue="test@gmail.com"
         />
         <label>Password</label>
         <input
@@ -43,6 +43,7 @@ export default function Login() {
           type="password"
           placeholder="Enter your password..."
           ref={passwordRef}
+          defaultValue="123456"
         />
         <button className="loginButton" type="submit" disabled={isFetching}>
           Login

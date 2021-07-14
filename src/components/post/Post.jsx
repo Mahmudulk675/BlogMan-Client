@@ -3,6 +3,7 @@ import "./post.css";
 
 export default function Post({ post }) {
   const PF = "https://mighty-brook-95398.herokuapp.com/images/";
+  console.log(PF + post.photo);
   return (
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}

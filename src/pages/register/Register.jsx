@@ -56,7 +56,12 @@ export default function Register() {
           Register
         </button>
       </form>
-      <button className="registerLoginButton">Login</button>
+      <Link to="/login">
+        <button className="registerButton" type="submit">
+          Demo Login
+        </button>
+      </Link>
+
       {error && (
         <span style={{ color: "red", marginTop: "10px" }}>
           Something went wrong!

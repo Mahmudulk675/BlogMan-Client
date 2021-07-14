@@ -5,6 +5,7 @@ import "./topbar.css";
 
 export default function Topbar() {
   const { user, dispatch } = useContext(Context);
+  const PF = "https://mighty-brook-95398.herokuapp.com/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -25,10 +26,15 @@ export default function Topbar() {
             </Link>
           </li>
           <li className="topListItem">ABOUT</li>
-          <li className="topListItem">CONTACT</li>
+
           <li className="topListItem">
             <Link className="link" to="/write">
               WRITE
+            </Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/settings">
+              SETTINGS
             </Link>
           </li>
           {user && (
@@ -45,7 +51,7 @@ export default function Topbar() {
               className="topImg"
               src={
                 user.profilePic
-                  ? user.profilePic
+                  ? PF + user.profilePic
                   : "https://cdn5.vectorstock.com/i/1000x1000/37/29/male-user-circle-icon-black-avatar-icon-user-vector-22753729.jpg"
               }
               alt=""

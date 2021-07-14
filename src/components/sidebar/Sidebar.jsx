@@ -19,9 +19,9 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
+        <span className="sidebarTitle">ABOUT</span>
         <img
-          src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
+          src="https://neilpatel.com/wp-content/uploads/2017/08/blog.jpg"
           alt=""
         />
         <p>
